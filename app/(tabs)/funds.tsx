@@ -13,6 +13,8 @@ export default function FundScreen() {
   const { data:funds, isSuccess, isLoading, isError } = useGetFundsAll();
   const [search, setSearch] = useState('');
 
+  // console.log(funds)
+
   
   const filteredFunds = funds?.filter((fund:Fund) => 
     fund?.name?.toLowerCase().includes(search.toLowerCase())
@@ -28,7 +30,10 @@ export default function FundScreen() {
   }
 
   if (isError) {
-    return <Text>Error loading funds.</Text>;
+    return <View style={{ marginTop: 200, alignItems: 'center' }}>
+
+      <Text>Error loading funds.</Text>;
+    </View>
   }
 
   return (

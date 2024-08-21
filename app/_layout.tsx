@@ -9,8 +9,8 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { isUserAuthenticated } from '@/utilities/auth';
 import { Provider } from 'react-redux';
-import { store } from '@/components/redux/store';
 import Toast from 'react-native-toast-message';
+import store from '@/components/redux/store';
 
 
 SplashScreen.preventAutoHideAsync();

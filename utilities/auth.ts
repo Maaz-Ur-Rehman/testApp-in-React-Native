@@ -26,7 +26,17 @@ export const removeToken = async (): Promise<void> => {
   }
 };
 
-
+// Check if user is authenticated
+export const isUserAuthenticated = async (): Promise<boolean> => {
+  try {
+    const token = await getToken();
+    // console.log(token,"token")
+    return token !== null;
+  } catch (error) {
+    console.error('Error checking user authentication', error);
+    return false;
+  }
+};
 
 // Get Authorization header
 export async function getAuthHeader() {
