@@ -40,6 +40,13 @@
       "eas": {
         "projectId": "b9aa620a-8684-43a0-82ee-ff4c65690746"
       }
+    },
+    "owner": "maaz-ur-rehman",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/b9aa620a-8684-43a0-82ee-ff4c65690746"
     }
   }
 }

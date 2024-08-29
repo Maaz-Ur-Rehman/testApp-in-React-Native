@@ -21,11 +21,11 @@ const BoxComponent:FC<BoxProps> = ({title}) => {
           </View>
         </View>
       </View>
-      <TouchableOpacity style={styles.buttonContainer}>
+      {/* <TouchableOpacity style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>View Details</Text>
         </TouchableOpacity>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   )
 }
