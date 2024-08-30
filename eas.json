@@ -1,4 +1,7 @@
 {
+  "cli": {
+    "version": ">= 10.1.1"
+  },
   "build": {
     "development": {
       "developmentClient": true,
@@ -10,7 +13,11 @@
       "channel": "preview"
     },
     "production": {
-      "channel": "production"
+      "channel": "production",
+      "autoIncrement": true
     }
+  },
+  "submit": {
+    "production": {}
   }
 }
